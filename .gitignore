@@ -1,0 +1,13 @@
+/vendor/
+/composer.phar
+/.env
+/writable/cache/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+/public/uploads/products/*
+/public/uploads/avatars/*
+!/public/uploads/products/.htaccess
+!/public/uploads/avatars/.htaccess
+!/public/uploads/products/.gitkeep
+!/public/uploads/avatars/.gitkeep

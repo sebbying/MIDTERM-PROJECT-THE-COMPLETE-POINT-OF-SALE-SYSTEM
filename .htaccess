@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule (^|/)\. - [F]
+RewriteRule ^(app|vendor|writable|tests|docs)/ - [F,NC]
+RewriteRule ^(spark|composer\.(json|lock|phar)|phpunit\.xml.*|README\.md|setup-windows\.ps1|database\.sql)$ - [F,NC]
+RewriteRule ^$ public/ [L]
+RewriteRule ^(?!public/)(.*)$ public/$1 [L]
+</IfModule>
